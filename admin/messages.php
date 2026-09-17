@@ -1,0 +1,3 @@
+<?php require_once '../functions.php';requireAdmin();$pageTitle='Messages';$rows=$pdo->query("SELECT * FROM contacts ORDER BY created_at DESC")->fetchAll();require 'header.php';?>
+<h1>Contact Messages</h1><div class="table-responsive"><table class="table bg-white"><thead><tr><th>Date</th><th>Name</th><th>Email</th><th>Subject</th><th>Message</th></tr></thead><tbody><?php foreach($rows as $r):?><tr><td><?=e(date('d M Y',strtotime($r['created_at'])))?></td><td><?=e($r['name'])?></td><td><?=e($r['email'])?></td><td><?=e($r['subject'])?></td><td><?=e($r['message'])?></td></tr><?php endforeach;?></tbody></table></div>
+<?php require 'footer.php';?>
