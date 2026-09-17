@@ -1,6 +1,6 @@
 # BookVerse — PHP & MySQL E-Commerce Website
 
-A university-friendly dynamic e-commerce bookstore built with PHP, MySQL, PDO, HTML/CSS and Bootstrap.
+A dynamic e-commerce bookstore built with PHP, MySQL, PDO, HTML/CSS and Bootstrap.
 
 ## Requirements covered
 
@@ -50,11 +50,6 @@ A university-friendly dynamic e-commerce bookstore built with PHP, MySQL, PDO, H
 7. Open:
    `http://localhost/BookVerse/`
 
-## Admin login
-Email: admin@bookverse.com
-Password: admin123
-
 ## Notes
-- Payment is intentionally simplified to Cash on Delivery because the assignment gives COD as an example and does not require a real payment gateway.
 - Product/category images are local SVG placeholders so the project works without downloading image files.
 - Bootstrap is loaded from CDN for a clean responsive UI. For a completely offline setup, Bootstrap files can later be downloaded into the project.
